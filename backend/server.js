@@ -10,9 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 //routes
-const homeRouter = require('./routes/index');
 const usersRouter = require("./routes/users");
-app.use('/', homeRouter);
 app.use('/users', usersRouter);
 
 const uri = process.env.DB_URI;
