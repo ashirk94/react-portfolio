@@ -12,24 +12,28 @@ const Sidebar = () => {
         <img src={Logo} alt="logo" />
       </Link>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faHome} color="darkred" />
+        <NavLink
+          exact="true" //from react router docs
+          style={({ isActive }) => ({ color: isActive ? 'grey' : 'white' })}
+          to="/"
+        >
+          <FontAwesomeIcon icon={faHome} color="violet" />
         </NavLink>
         <NavLink
           exact="true"
-          activeclassname="active"
+          style={({ isActive }) => ({ color: isActive ? 'grey' : 'white' })}
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="blue" />
+          <FontAwesomeIcon icon={faUser} color="Aquamarine" />
         </NavLink>
         <NavLink
           exact="true"
-          activeclassname="active"
+          style={({ isActive }) => ({ color: isActive ? 'grey' : 'white' })}
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="white" />
+          <FontAwesomeIcon icon={faEnvelope} color="Magenta" />
         </NavLink>
         <br />
         <br />
@@ -42,11 +46,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faLinkedin} color="lightblue" />
         </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/alan-shirk/"
-        >
+        <a target="_blank" rel="noreferrer" href="https://github.com/ashirk94">
           <FontAwesomeIcon icon={faGithub} color="white" />
         </a>
       </nav>

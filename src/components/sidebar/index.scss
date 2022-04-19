@@ -29,20 +29,18 @@
       position: relative;
       display: block;
       text-decoration: none;
-
-      i {
-        transition: all 0.5s ease-out;
-      }
+    transition: all 0.5s ease-out;
 
       &:hover {
         color: grey;
 
         svg {
-          opacity: 0;
+          opacity: 0.5;
         }
 
         &:after {
           opacity: 1;
+          color: grey;
         }
       }
 
@@ -73,9 +71,9 @@
         }
       }
 
-      a.active {
+      &.active {
         svg {
-          color: green;
+          color: grey;
         }
       }
     }
