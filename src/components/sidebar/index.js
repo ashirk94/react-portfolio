@@ -17,7 +17,7 @@ const Sidebar = () => {
           style={({ isActive }) => ({ color: isActive ? 'grey' : 'white' })}
           to="/"
         >
-          <FontAwesomeIcon icon={faHome} color="violet" />
+          <FontAwesomeIcon icon={faHome} color="SlateBlue" />
         </NavLink>
         <NavLink
           exact="true"
@@ -25,7 +25,7 @@ const Sidebar = () => {
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="Aquamarine" />
+          <FontAwesomeIcon icon={faUser} color="RoyalBlue" />
         </NavLink>
         <NavLink
           exact="true"
@@ -33,7 +33,7 @@ const Sidebar = () => {
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="Magenta" />
+          <FontAwesomeIcon icon={faEnvelope} color="Crimson" />
         </NavLink>
         <br />
         <br />
