@@ -1,32 +1,34 @@
-$primary-color: rgb(235, 235, 241);
+$primary-color: white;
 
 @import 'animate.css';
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
-      font-weight: normal;
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'La Belle Aurore';
-    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
-      font-weight: normal;
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'Coolvetica';
-    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
-      font-weight: normal;
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
 }
 
 input,
 textarea {
-    font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue';
 }
 
-
-
+a,
+p {
+  color: $primary-color;
+}

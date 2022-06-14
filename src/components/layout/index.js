@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router-dom'
-import Sidebar from '../sidebar'
+import Navbar from '../navbar'
 import './index.scss'
 
 const Layout = () => {
   return (
     <div className="page">
       <Outlet />
-      <Sidebar />
+      <Navbar />
     </div>
   )
 }

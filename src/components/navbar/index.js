@@ -1,16 +1,34 @@
 import './index.scss'
-import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../assets/images/knight2.jpg'
+import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { useState, useEffect } from 'react'
+import Burger from '../burger'
 
-const Sidebar = () => {
+const Navbar = () => {
+
+    const [mobile, setMobile] = useState(false)
+
+    useEffect(() =>
+    {
+        const handleResize = () => {
+            if (window.innerWidth < 1065) {
+                setMobile(true)
+            } else {
+                setMobile(false)
+            }
+        }
+
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    },  [])
+       
+
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
-        <img src={Logo} alt="logo" />
-      </Link>
       <nav>
         <NavLink
           exact="true" //from react router docs
@@ -35,23 +53,25 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="Crimson" />
         </NavLink>
-        <br />
-        <br />
-        <br />
-        <br />
         <a
+        className="linkedin-link"
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/alan-shirk/"
         >
           <FontAwesomeIcon icon={faLinkedin} color="lightblue" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/ashirk94">
+        <a className="github-link" target="_blank" rel="noreferrer" href="https://github.com/ashirk94">
           <FontAwesomeIcon icon={faGithub} color="white" />
         </a>
+        {!mobile && <Burger />}
+
+        {mobile && (
+            <div className="sidebar-toggle"></div>
+        )}
       </nav>
     </div>
   )
 }
 
-export default Sidebar
+export default Navbar
