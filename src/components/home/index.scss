@@ -11,7 +11,7 @@
       opacity: 0.5;
     }
   }
-  .logo:hover {
+  .logo:hover, .logo:focus {
     display: flex;
     padding: 10px 0;
 
@@ -83,7 +83,7 @@
     border: 1px solid white;
     width: 20vmax;
   }
-  .contact-link:hover {
+  .contact-link:hover, .contact-link:focus {
     color: grey;
     border-color: grey;
   }

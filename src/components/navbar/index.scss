@@ -34,7 +34,7 @@
       text-decoration: none;
       text-align: center;
       
-      &:hover {
+      &:hover, &:focus {
         color: grey;
         
         svg {
