@@ -4,7 +4,7 @@ import Logo from '../../assets/images/knight2.jpg'
 
 const Home = () => {
   return (
-    <div className="container home-page">
+    <div className="home-page">
               <Link className="logo" to="/">
         <img src={Logo} alt="logo" />
       </Link>
