@@ -1,90 +1,77 @@
 .logo {
-    display: block;
-    padding: 10px 0;
-    align-items: center;
-    img {
-        border-radius: 50px;
-      display: block;
-      margin: 0 auto;
-      max-width: 50%;
-      height: auto;
-      opacity: 0.5;
-    }
-  }
-  .logo:hover, .logo:focus {
-    display: flex;
-    padding: 10px 0;
+    padding-top: 10px;
+	display: block;
+	align-items: center;
 
-    img {
-        border-radius: 50px;
-      display: block;
-      margin: 0 auto;
-      max-width: 50%;
-      height: auto;
-      opacity: 1;
-      transition: all 0.5s ease-in-out;
-    }
-  }
+	img {
+		border-radius: 50px;
+		display: block;
+		margin: 0 auto;
+		max-width: 50%;
+		height: auto;
+	}
+}
+
 .text-zone {
-  position: relative;
-  max-height: 90%;
-  max-width: 95%;
-  margin-top: 5%;
-  margin: auto;
+	position: relative;
+	max-height: 90%;
+	max-width: 95%;
+	margin: 0 auto;
 
-  .delay1 {
-    opacity: 0;
-    animation: fadeIn 6s forwards;
-    animation-delay: 1.5s;
-  }
+	.delay1 {
+		opacity: 0;
+		animation: fadeIn 6s forwards;
+		animation-delay: 1.5s;
+	}
 
-  .delay2 {
-    opacity: 0;
-    animation: fadeIn 4.5s backwards;
-    animation-fill-mode: forwards;
-    animation-delay: 3.5s;
-  }
+	.delay2 {
+		opacity: 0;
+		animation: fadeIn 4.5s backwards;
+		animation-fill-mode: forwards;
+		animation-delay: 3.5s;
+	}
 
-  h1 {
-    display: inline-block;
-    color: white;
-    font-size: 6vmax;
-    margin: 0;
-    font-weight: 500;
-  }
-  .name {
-    color: hsl(0, 90%, 50%);
-  }
+	h1 {
+		display: inline-block;
+		color: white;
+		font-size: 6vmax;
+		margin: 0 auto;
+		font-weight: 500;
+	}
+	.name {
+		color: hsl(0, 90%, 50%);
+	}
 
-  .hi {
-    opacity: 0;
-    animation: fadeIn 4s forwards;
-    animation-delay: 0s;
-  }
-  h1,
-  h2 {
-    font-family: 'Coolvetica';
-  }
-  h2 {
-    font-size: 4vmax;
-    margin: 10px;
-    font-weight: 400;
-    color: hsl(0, 100%, 70%);
-  }
-  .contact-link {
-    color: white;
-    font-size: 30px;
-    font-weight: 300;
-    margin: auto;
-    margin-top: 30px;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 1px solid white;
-    width: 20vmax;
-  }
-  .contact-link:hover, .contact-link:focus {
-    color: grey;
-    border-color: grey;
-  }
+	.hi {
+		opacity: 0;
+		animation: fadeIn 4s forwards;
+		animation-delay: 0s;
+	}
+	h1,
+	h2 {
+		font-family: 'Coolvetica';
+	}
+	h2 {
+		font-size: 4vmax;
+		margin: 0 auto;
+		font-weight: 400;
+		color: hsl(0, 100%, 70%);
+	}
+	.contact-link {
+		color: white;
+		font-size: 25px;
+		font-weight: 300;
+		margin: auto;
+		margin-top: 30px;
+		display: block;
+		padding: 5px 0px;
+		text-decoration: none;
+		border: 1px solid white;
+		width: 20vmax;
+	}
+	.contact-link:hover,
+	.contact-link:focus {
+		color: grey;
+		border-color: grey;
+	}
 }

@@ -5,9 +5,9 @@ import Logo from '../../assets/images/knight2.jpg'
 const Home = () => {
   return (
     <div className="home-page">
-              <Link className="logo" to="/">
+              <div className="logo">
         <img src={Logo} alt="logo" />
-      </Link>
+      </div>
       <div className="text-zone">
       <h1 className="hi">Hi,&nbsp;</h1>
         <span className="delay1">
