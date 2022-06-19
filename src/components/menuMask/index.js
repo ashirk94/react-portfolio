@@ -9,8 +9,8 @@ const MenuMask = (props) => {
         leave: {opacity: 0},
         config: { duration: 500 }
       })
-    return transition(( style ) => (
-        <animated.div style={style} className="menu-mask" onClick={props.onClick}></animated.div>
+    return transition(( style, key ) => (
+        <animated.div key={key} style={style} className="menu-mask" onClick={props.onClick}></animated.div>
     ))
 }
 

@@ -2,18 +2,18 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { animated, config, useTransition } from 'react-spring'
+import { animated, config, useSpring } from 'react-spring'
 
 
-const Menu = () => {
-    const transition = useTransition(null, {
+const Menu = (props) => {
+
+    const springProps = useSpring({
         from: { opacity: 0, transform: 'translateY(-100%)' },
-        enter: { opacity: 1, transform: 'translateY(0%)' },
-        leave: { opacity: 0, transform: 'translateY(100%)' },
+        to: { opacity: props.showMenu ? 1 : 0 , transform: props.showMenu ? 'translateY(0%)' : 'translateY(-200%)'},
         config: config.molasses
     })
-	return transition(( style ) => (
-		<animated.nav className="fixed" style={style}>
+	return (
+		<animated.nav style={springProps} className="fixed">
 			<NavLink
 				exact='true' //from react router docs
 				style={({ isActive }) => ({
@@ -55,7 +55,7 @@ const Menu = () => {
 				<FontAwesomeIcon icon={faGithub} color='white' />
 			</a>
 		</animated.nav>
-	))
+        )
 }
 
 export default Menu

@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
       <div className="nav-bar mb2">
         <nav>
-            <Menu/>
+            <Menu showMenu={true}/>
         </nav>
       </div>
     )
@@ -46,8 +46,9 @@ const Navbar = () => {
               icon={faBars}
               onClick={() => setShowMenu(!showMenu)}
             ></FontAwesomeIcon>
-          </div>
+          </div>    
         </nav>
+        <Menu showMenu={showMenu}/>
       </div>
     )
   } else if (mobile && showMenu === true){
@@ -61,7 +62,7 @@ const Navbar = () => {
             ></FontAwesomeIcon>
           </div>
         </nav>
-        <Menu/>
+        <Menu showMenu={showMenu}/>
         <MenuMask onClick={() => setShowMenu(!showMenu)}/>
       </div>
     )
