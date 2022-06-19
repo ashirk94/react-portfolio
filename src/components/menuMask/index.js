@@ -1,0 +1,17 @@
+import { animated, useTransition } from 'react-spring'
+
+
+
+const MenuMask = (props) => {
+    const transition = useTransition(null, {
+        from: {opacity: 0},
+        enter: {opacity: 1},
+        leave: {opacity: 0},
+        config: { duration: 500 }
+      })
+    return transition(( style ) => (
+        <animated.div style={style} className="menu-mask" onClick={props.onClick}></animated.div>
+    ))
+}
+
+export default MenuMask
