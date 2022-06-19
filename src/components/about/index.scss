@@ -1,25 +1,8 @@
-.logo {
-	display: block;
-    opacity: 0;
-    animation: fadeIn 6s forwards;
-    animation-delay: 1.5s;
-
-	img {
-        margin-top: 8%;
-		border-radius: 50px;
-		display: block;
-		margin: 0 auto;
-		max-width: 50%;
-		height: auto;
-	}
-}
-
 .text-zone {
 	position: relative;
 	max-height: 90%;
 	max-width: 95%;
 	margin: 0 auto;
-    margin-top: 0 !important;
 
 	.delay1 {
 		opacity: 0;
@@ -48,7 +31,7 @@
 	.hi {
 		opacity: 0;
 		animation: fadeIn 4s forwards;
-		animation-delay: 1s;
+		animation-delay: 0s;
 	}
 	h1,
 	h2 {
@@ -60,25 +43,24 @@
 		font-weight: 400;
 		color: hsl(0, 100%, 70%);
 	}
-	#contact-link {
+	.contact-link {
 		color: white;
-		font-size: 2vmax;
+		font-size: 25px;
 		font-weight: 300;
 		margin: auto;
 		margin-top: 30px;
 		display: block;
-		padding: 10px 5px;
-        line-height: 3vmax;
+		padding: 5px 0px;
 		text-decoration: none;
-		border: 1px solid;
+		border: 1px solid white;
 		width: 20vmax;
-        animation: fadeIn 6s forwards;
-    animation-delay: 1.5s;
-    opacity: 0;
 	}
-	#contact-link:hover,
-	#contact-link:focus {
+	.contact-link:hover,
+	.contact-link:focus {
 		color: grey;
 		border-color: grey;
 	}
+}
+.home-page {
+    margin-top: 6%;
 }

@@ -3,12 +3,14 @@ import Navbar from '../navbar'
 import './index.scss'
 
 const Layout = () => {
-  return (
-    <div className="page">
-      <Outlet />
-      <Navbar />
-    </div>
-  )
+	return (
+		<div className='App'>
+			<Navbar />
+			<div className='page'>
+				<Outlet />
+			</div>
+		</div>
+	)
 }
 
 export default Layout
