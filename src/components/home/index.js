@@ -18,7 +18,7 @@ const Home = () => {
 				</span>
 				<div className='delay2'>
 					<h2>
-						I'm a Full Stack JavaScript and C# Developer from
+						I'm a Full Stack JavaScript and C# Developer <br/>from
 						Eugene, Oregon.
 					</h2>
 				</div>
