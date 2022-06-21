@@ -1,6 +1,6 @@
 import './index.scss'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/images/main-pfp.jpg'
+import Logo from '../../assets/images/me620.jpg'
 //import Loader from 'react-loaders'
 
 const Home = () => {
