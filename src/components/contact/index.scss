@@ -74,13 +74,18 @@
 }
 
 .contact-form {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     margin-top: 20px;
+    
 
     ul {
         padding: 0;
         margin: 0;
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
 
         li {
             padding: 0;
@@ -93,33 +98,40 @@
             opacity: 0;
             animation: fadeInUp 2s 0s;
             animation-fill-mode: forwards;
+            width: 400px;
+        }
+        .row {
+            width: 800px;
         }
 
         input[type='text'], input[type='email'], textarea
         {
-            width: 20%;
+            width: 90%;
             border: 0;
             background: hsl(200, 0%, 30%);
             height: 50px;
             font-size: 16px;
             color: hsl(200, 0%, 90%);
-            padding: 0 20px;
             margin: 1% auto;
             border-radius: 10px;
         }
 
         textarea {
             height: 100px;
-            width: 30%;
+            border-radius: 10px;
+            width: 90%;
         }
     }
 
     .btn {
-        background: hsl(0, 100%, 70%);
+        background: 0 0;
         color: hsl(200, 0%, 90%);
-        border: 5px solid hsl(200, 0%, 90%);
-        width: 5%;
+        border: 1px solid hsl(200, 0%, 90%);
+        width: 80px;
         border-radius: 10px;
         font-size: 16px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
     }
 }

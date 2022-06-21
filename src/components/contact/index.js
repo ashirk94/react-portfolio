@@ -16,16 +16,14 @@ const Contact = () => {
                         <li>
                             <input type="email" name="email" placeholder="Email" required />
                         </li>
-                        <li>
+                        <li class="row">
                             <input type="text" name="subject" placeholder="Subject" required />
                         </li>
-                        <li>
+                        <li class="row">
                             <textarea  name="message" placeholder="Message" required />
                         </li>
-                        <li>
-                            <input type="submit" className="btn" value="SEND"  />
-                        </li>
                     </ul>
+                    <input type="submit" className="btn" value="SEND"  />
                 </form>
             </div>
 		</div>
