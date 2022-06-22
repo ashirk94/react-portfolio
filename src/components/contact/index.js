@@ -1,14 +1,30 @@
 //import Loader from 'react-loaders'
 import './index.scss'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+    const form = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+    
+        emailjs.sendForm('service_hz8jlj6', 'template_lb09zmq', form.current, 'viLkzGTITUcl5llhl')
+          .then(() => {
+              alert('Email sent successfully')
+              window.location.reload(false)
+          }, () => {
+              alert('Email failed to send')
+          })
+      }
+    
     return (
         <div>
 		<div className='text-zone'>
 			<h2>Contact Me</h2>
             <p className='text'>If you would be interested in working with me,<br/>please send an email using the form below:</p>
             <div className="contact-form">
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <ul>
                         <li>
                             <input type="text" name="name" placeholder="Name" required />
@@ -16,10 +32,10 @@ const Contact = () => {
                         <li>
                             <input type="email" name="email" placeholder="Email" required />
                         </li>
-                        <li class="row">
+                        <li className="row">
                             <input type="text" name="subject" placeholder="Subject" required />
                         </li>
-                        <li class="row">
+                        <li className="row">
                             <textarea  name="message" placeholder="Message" required />
                         </li>
                     </ul>

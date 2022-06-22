@@ -31,6 +31,7 @@
 		font-size: 2vmax;
 		margin: 0 auto;
 		font-weight: 500;
+        animation: fadeIn 3s;
 	}
 	.name {
 		color: hsl(0, 90%, 50%);
@@ -133,5 +134,13 @@
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
+        cursor: pointer;
+        animation: fadeInUp 1.5s 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    .btn:hover {
+        color: grey;
+        border-color: grey;
     }
 }
