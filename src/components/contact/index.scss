@@ -112,9 +112,15 @@
     }
     .text-zone
     {
-        line-height: 30px;
+        line-height: 30px !important;
+    }
+    .text {
+        font-size: 16px !important;
     }
     .nav-bar {
         margin-bottom: 10px;
+    }
+    .links {
+        margin: 40px auto !important;
     }
 }
