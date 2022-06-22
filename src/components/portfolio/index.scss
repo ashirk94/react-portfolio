@@ -8,7 +8,7 @@
 	h1 {
 		display: inline-block;
 		color: white;
-		font-size: 6vmax;
+		font-size: 8vmax;
 		margin: 0 auto;
 		font-weight: 500;
 	}
@@ -26,7 +26,7 @@
 		font-family: 'Coolvetica';
 	}
 	h2 {
-		font-size: 4vmax;
+		font-size: 5vmax;
 		margin: 0 auto;
 		font-weight: 400;
 		color: hsl(0, 100%, 70%);
@@ -34,9 +34,9 @@
 	.links {
         display: inline-block;
 		color: white;
-		font-size: 2vmax;
+		font-size: 3vmax;
 		margin: 0 auto;
-        margin-top: 2%;
+        margin-top: 20px;
 		font-weight: 500;
         animation: fadeInUp 1.5s 1s;
         animation-fill-mode: forwards;
@@ -48,16 +48,17 @@
 		border-color: grey;
 	}
     .large {
-        font-size: 3vmax;
+        font-size: 6vmax;
     }
 }
 .image {
-    width: 400px;
+    width: 30vmax;
     height: auto;
+    max-height: 150px;
     border-radius: 20px;
     animation: fadeInUp 1.5s 0s;
-        animation-fill-mode: forwards;
-        opacity: 0;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 
