@@ -19,7 +19,8 @@
 	max-height: 90%;
 	max-width: 95%;
 	margin: 0 auto;
-    margin-top: 0 !important;
+    margin-top: 40px !important;
+    line-height: 100px !important;
 
 	.delay1 {
 		opacity: 0;
@@ -82,4 +83,19 @@
 		color: grey;
 		border-color: grey;
 	}
+}
+@media screen and (max-width: 600px)
+{
+    body {
+        overflow-y: auto;
+    }
+    img {
+        max-height: 150px;
+    }
+    .text-zone, h1, h2 {
+        line-height: 70px;
+    }
+    .nav-bar {
+        margin-bottom: 30px !important;
+    }
 }

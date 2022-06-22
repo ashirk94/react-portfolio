@@ -3,7 +3,7 @@
 	max-height: 90%;
 	max-width: 95%;
 	margin: 0 auto;
-    margin-top: 7%;
+    line-height: 70px;
 
 	.delay1 {
 		opacity: 0;
@@ -29,49 +29,10 @@
 		display: inline-block;
 		color: white;
 		font-size: 2vmax;
-		margin: 0 auto;
+		margin: 20px auto;
 		font-weight: 500;
         animation: fadeIn 3s;
 	}
-	.name {
-		color: hsl(0, 90%, 50%);
-	}
-
-	.hi {
-		opacity: 0;
-		animation: fadeIn 4s forwards;
-		animation-delay: 0s;
-	}
-	h1,
-	h2 {
-		font-family: 'Coolvetica';
-	}
-	h2 {
-		font-size: 4vmax;
-		margin: 0 auto;
-		font-weight: 400;
-		color: hsl(0, 100%, 70%);
-	}
-	.contact-link {
-		color: white;
-		font-size: 25px;
-		font-weight: 300;
-		margin: auto;
-		margin-top: 30px;
-		display: block;
-		padding: 5px 0px;
-		text-decoration: none;
-		border: 1px solid white;
-		width: 20vmax;
-	}
-	.contact-link:hover,
-	.contact-link:focus {
-		color: grey;
-		border-color: grey;
-	}
-}
-.home-page {
-    margin-top: 6%;
 }
 
 .contact-form {
@@ -113,7 +74,7 @@
             height: 50px;
             font-size: 16px;
             color: hsl(200, 0%, 90%);
-            margin: 1% auto;
+            margin: 10px auto;
             border-radius: 10px;
         }
 
@@ -142,5 +103,18 @@
     .btn:hover {
         color: grey;
         border-color: grey;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    body {
+        overflow-y: auto;
+    }
+    .text-zone
+    {
+        line-height: 30px;
+    }
+    .nav-bar {
+        margin-bottom: 10px;
     }
 }

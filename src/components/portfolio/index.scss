@@ -36,7 +36,7 @@
 		color: white;
 		font-size: 3vmax;
 		margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 50px;
 		font-weight: 500;
         animation: fadeInUp 1.5s 1s;
         animation-fill-mode: forwards;
@@ -59,6 +59,18 @@
     animation: fadeInUp 1.5s 0s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+@media screen and (max-width: 600px)
+{
+    body {
+        overflow-y: auto;
+    }
+    .nav-bar {
+        margin-bottom: 10px;
+    }
+    .links {
+        margin-top: 40px !important;
+    }
 }
 
 

@@ -1,3 +1,6 @@
+body {
+    overflow-y: scroll;
+}
 .text-zone {
 	position: relative;
 	max-height: 90%;
@@ -75,6 +78,9 @@
 		border-color: grey;
 	}
 }
-.home-page {
-    margin-top: 6%;
+@media screen and (max-width: 600px)
+{
+    .nav-bar {
+        margin-bottom: 10px;
+    }
 }
