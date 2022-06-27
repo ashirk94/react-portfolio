@@ -1,6 +1,6 @@
 import './index.scss'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/images/me620.jpg'
+import Logo from '../../assets/images/me626.jpg'
 //import Loader from 'react-loaders'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
 			<div className='logo'>
 				<img src={Logo} alt='logo' />
 			</div>
-			<div className='text-zone'>
+			<div className='home-text-zone'>
 				<h1 className='hi'>Hi,&nbsp;</h1>
 				<span className='delay1'>
 					<h1>

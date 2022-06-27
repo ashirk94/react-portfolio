@@ -14,7 +14,7 @@
 	}
 }
 
-.text-zone {
+.home-text-zone {
 	position: relative;
 	max-height: 90%;
 	max-width: 95%;
@@ -94,7 +94,7 @@
         max-height: 150px;
     }
     .text-zone, h1, h2 {
-        line-height: 70px;
+        line-height: 70px !important;
         font-size: 40px !important;
     }
     h1 {
