@@ -1,7 +1,7 @@
 //import Loader from 'react-loaders'
 import './index.scss'
 import channelThis from "../../assets/images/channel-this.jpg"
-import ocdla from "../../assets/images/ocdla-map.jpg"
+//import ocdla from "../../assets/images/ocdla-map.jpg"
 
 const Portfolio = () => {
     return (
@@ -11,8 +11,9 @@ const Portfolio = () => {
             <a className="links large" href='http://channelthis.tv' target="_blank" rel="noreferrer">ChannelThis.tv</a><br/>
             <img className="image" src={channelThis} alt="channelthis"></img>
             <br/>
-            <a className="links" href="https://appdev.ocdla.org/directory/members" target="_blank" rel="noreferrer">OCDLA Directory With Map View</a><br/>
-            <img className="image" src={ocdla} alt="ocdla"></img>
+            <p className="links">Coming soon: Produce Shop</p><br/>
+            <p className="links small">A React based marketplace with Firebase authentication.</p>
+            
 		</div>
 		{/* <Loader type='ball-pulse' /> */}
 	</div>
