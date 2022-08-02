@@ -26,17 +26,19 @@ const Contact = () => {
             <div className="contact-form">
                 <form ref={form} onSubmit={sendEmail}>
                     <ul>
-                        <li>
-                            <input type="text" name="name" placeholder="Name" required />
+                        
+                        <li className='same-row'>
+                            <input className='same-row' type="text" name="name" placeholder=" Name" required />
+                        </li>
+                        <li className='same-row'>
+                            <input className='same-row' type="email" name="email" placeholder=" Email" required />
+                        </li>
+                        
+                        <li >
+                            <input className="row" type="text" name="subject" placeholder=" Subject" required />
                         </li>
                         <li>
-                            <input type="email" name="email" placeholder="Email" required />
-                        </li>
-                        <li className="row">
-                            <input type="text" name="subject" placeholder="Subject" required />
-                        </li>
-                        <li className="row">
-                            <textarea  name="message" placeholder="Message" required />
+                            <textarea className="row" name="message" placeholder=" Message" required />
                         </li>
                     </ul>
                     <input type="submit" className="btn" value="SEND"  />

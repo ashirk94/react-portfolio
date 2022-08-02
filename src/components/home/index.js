@@ -1,5 +1,5 @@
 import './index.scss'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import Logo from '../../assets/images/me626.jpg'
 //import Loader from 'react-loaders'
 
@@ -17,14 +17,15 @@ const Home = () => {
 					</h1>
 				</span>
 				<div className='delay2'>
+                    <br/>
 					<h2>
 						I'm a Full Stack JavaScript and C# Developer <br/>from
 						Eugene, Oregon.
 					</h2>
 				</div>
-				<Link to='/contact' id='contact-link'>
+				{/* <Link to='/contact' id='contact-link'>
 					Contact Me
-				</Link>
+				</Link> */}
 			</div>
 			{/* <Loader type="ball-pulse"></Loader>   */}
 		</div>
