@@ -10,7 +10,7 @@ const Menu = (props) => {
     const springProps = useSpring({
         from: { opacity: 0, transform: 'translateY(-100%)' },
         to: { opacity: props.showMenu ? 1 : 0 , transform: props.showMenu ? 'translateY(0%)' : 'translateY(-200%)'},
-        config: config.molasses
+        config: config.slow
     })
 	return (
 		<animated.nav style={springProps} className="fixed">
