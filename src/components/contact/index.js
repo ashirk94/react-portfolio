@@ -22,10 +22,10 @@ const Contact = () => {
         <div>
 		<div className='text-zone'>
 			<h2>Contact Me</h2>
-            <p className='text'>If you would be interested in working with me,<br/>please send an email using the form below:</p>
+            <p className='text'>If you would like to contact me,<br/>please send an email using the form below:</p>
             <div className="contact-form">
                 <form ref={form} onSubmit={sendEmail}>
-                    <ul>
+                    <ul className='grid'>
                         
                         <li className='same-row'>
                             <input className='same-row' type="text" name="name" placeholder=" Name" required />
@@ -33,8 +33,9 @@ const Contact = () => {
                         <li className='same-row'>
                             <input className='same-row' type="email" name="email" placeholder=" Email" required />
                         </li>
-                        
-                        <li >
+                    </ul>
+                    <ul className='flex'>
+                    <li >
                             <input className="row" type="text" name="subject" placeholder=" Subject" required />
                         </li>
                         <li>
