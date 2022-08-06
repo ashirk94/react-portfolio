@@ -32,18 +32,18 @@
 		color: hsl(0, 100%, 70%);
 	}
     .link-zone {
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 50px auto;
         justify-content: center;
-        align-items: center;
-        width: 25%;
+        width: 100%;
     }
 	.links {     
+        text-align: center;
 		color: white;
 		font-size: 3vmax;
-        margin-left: 20px;
-        margin-right: 20px;      
+        margin: 40px auto !important;    
         margin-top: 80px;
         margin-bottom: 20px;
 		font-weight: 500;
@@ -51,6 +51,7 @@
         animation-fill-mode: forwards;
         opacity: 0;
         line-height: 50px !important;
+        display: block;
     }
 	.links:hover,
 	.links:focus {
@@ -64,17 +65,32 @@
     {
         font-size: 5.5vmin;
     }
+    .item {
+        width: 40%;
+        max-width: 900px;
+        min-width: 200px;
+        margin: 50px auto;
+        min-height: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-flow: column wrap; 
+    }
+    .image {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+      max-width: 600px;
+      min-width: 200px;
+      height: auto;
+      max-height: 280px;
+        border-radius: 20px;
+        animation: fadeInUp 1.5s 0s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        margin: 0 auto;
+    }
 }
-.image {
-    display: block;
-    max-width: 600px;
-    height: auto;
-    max-height: 150px;
-    border-radius: 20px;
-    animation: fadeInUp 1.5s 0s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
+
 @media screen and (max-width: 600px)
 {
     body {
@@ -83,13 +99,15 @@
     .nav-bar {
         margin-bottom: 10px;
     }
-    .links {
-        margin-top: 40px !important;
+    .item {
+        height: 150px;
+        margin-top: 0px;
     }
-    .text-zone {
-        .link-zone {
-            display: flex;
-        }
+    .link-zone {
+        margin: 0 auto !important;
+    }
+    h1 {
+        margin-bottom: 0px !important;
     }
 
 }

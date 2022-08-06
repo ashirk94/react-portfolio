@@ -11,15 +11,19 @@ const Portfolio = () => {
 		<div className='text-zone'>
 			<h2>Projects</h2>
             <div className='link-zone'>
-            <a className="links" href='https://tech-rental.azurewebsites.net/' target="_blank" rel="noreferrer">RentTech</a>
+                <div className='item'>
+                <a className="links" href='https://tech-rental.azurewebsites.net/' target="_blank" rel="noreferrer">RentTech</a>
             <img className="image" src={rentTech} alt="RentTech"></img>
-            </div>
-            <div className='link-zone'>
+                </div>       
+            <div className='item'>
             <a className="links" href='http://mygamelist-env.eba-pjfkzxaf.us-west-2.elasticbeanstalk.com/' target="_blank" rel="noreferrer">MyGameList</a>
             <img className="image" src={myGameList} alt="MyGameList"></img>
+            </div>
+            <div className='item'>
             <a className="links" href='https://scandinavian-food.azurewebsites.net/' target="_blank" rel="noreferrer">ScandinavianFood</a> 
             <img className="image" src={scandinavianFood} alt="ScandinavianFood"></img>
             </div>   
+            </div>
 		</div>
 		{/* <Loader type='ball-pulse' /> */}
 	</div>
