@@ -48,7 +48,6 @@ const Navbar = () => {
             ></FontAwesomeIcon>
           </div>    
         </nav>
-        <Menu showMenu={showMenu}/>
       </div>
     )
   } else if (mobile && showMenu === true){

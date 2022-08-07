@@ -5,7 +5,7 @@
     animation-delay: 1.5s;
 
 	img {
-        margin-top: 8%;
+        margin-top: 60px !important;
 		border-radius: 50px;
 		display: block;
 		margin: 0 auto;
@@ -19,8 +19,6 @@
 	max-height: 90%;
 	max-width: 95%;
 	margin: 0 auto;
-    margin-top: 40px !important;
-    line-height: 80px !important;
 
 	.delay1 {
 		opacity: 0;
@@ -38,9 +36,10 @@
 	h1 {
 		display: inline-block;
 		color: white;
-		font-size: 6vmax;
-		margin: 0 auto;
+		margin: 10px auto;
 		font-weight: 500;
+        font-size: calc(3rem + 7vw) !important;
+        margin-bottom: -60px !important;
 	}
 	.name {
 		color: hsl(0, 90%, 50%);
@@ -50,57 +49,45 @@
 		opacity: 0;
 		animation: fadeIn 4s forwards;
 		animation-delay: 1s;
+        
 	}
 	h1,
 	h2 {
 		font-family: 'Coolvetica';
 	}
 	h2 {
-		font-size: 4vmax;
-		margin: 0 auto;
+		font-size: 4vmax;		
 		font-weight: 400;
 		color: hsl(0, 100%, 70%);
-	}
-	#contact-link {
-		color: white;
-		font-size: 2vmax;
-		font-weight: 300;
-		margin: auto;
-		margin-top: 30px;
-		display: block;
-		padding: 10px 5px;
-        line-height: 3vmax;
-		text-decoration: none;
-		border: 1px solid;
-        border-color: white;
-		width: 20vmax;
-        animation: fadeIn 6s forwards;
-    animation-delay: 1.5s;
-    opacity: 0;
-    border-radius: 10px;
-	}
-	#contact-link:hover,
-	#contact-link:focus {
-		color: grey;
-		border-color: grey;
 	}
 }
 @media screen and (max-width: 600px)
 {
-    body {
-        overflow-y: auto;
+    .home-text-zone {
+        h1 {
+            font-size: 50px !important;
+            line-height: 30px !important;
+            margin: 0 auto !important;
+            margin-top: 120px !important;
+        }
+        h2 {
+            margin: 0 auto !important;
+            font-size: 40px !important;
+            line-height: 50px !important;
+            padding-bottom: 50px !important;
+            margin-top: 80px !important;
+        }
+        .delay1, .delay2 {
+            margin: -40px auto !important;
+            font-size: 20px !important;
+        }
+        .nav-bar {
+            margin-bottom: 30px !important;
+        }
     }
-    img {
-        max-height: 150px;
-    }
-    .text-zone, h1, h2 {
-        line-height: 70px !important;
-        font-size: 40px !important;
-    }
-    h1 {
-        font-size: 50px !important;
-    }
-    .nav-bar {
-        margin-bottom: 30px !important;
+    .logo {
+        img {
+            max-height: 150px;
+        }
     }
 }

@@ -8,7 +8,7 @@ import scandinavianFood from "../../assets/images/scandinavianfood.jpg"
 const Portfolio = () => {
     return (
         <div>
-		<div className='text-zone'>
+		<div className='portfolio'>
 			<h2>Projects</h2>
             <div className='link-zone'>
                 <div className='item'>

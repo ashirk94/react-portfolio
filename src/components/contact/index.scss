@@ -1,9 +1,13 @@
-.text-zone {
+.contact {
 	position: relative;
 	max-height: 90%;
 	max-width: 95%;
 	margin: 0 auto;
 	line-height: 60px !important;
+
+    h1 {
+        display: block;
+    }
 
 	.delay1 {
 		opacity: 0;
@@ -18,12 +22,11 @@
 		animation-delay: 3.5s;
 	}
 
-	h1 {
-		display: inline-block;
-		color: white;
-		font-size: 6vmax;
-		margin: 0 auto;
+	h2 {
+		color: hsl(0, 100%, 70%);
+		font-size: calc(3rem + 5vw) !important;
 		font-weight: 500;
+        margin-top: 70px !important;
 	}
 	.text {
 		display: inline-block;
@@ -32,6 +35,7 @@
 		margin: 20px auto;
 		font-weight: 500;
 		animation: fadeIn 3s;
+        margin-top: -50px !important;
 	}
 }
 
@@ -86,6 +90,7 @@
 	}
 }
 .btn {
+    text-align: center;
 	background: 0 0;
 	color: hsl(200, 0%, 90%);
 	border: 1px solid hsl(200, 0%, 90%);
@@ -94,7 +99,7 @@
 	font-size: 16px;
 	letter-spacing: 3px;
 	text-decoration: none;
-	padding: 8px 10px;
+	padding: 10px 0px;
 	cursor: pointer;
 	animation: fadeInUp 1.5s 1s;
 	animation-fill-mode: forwards;
@@ -108,19 +113,27 @@
 	border-color: grey;
 }
 @media screen and (max-width: 600px) {
-	.text-zone {
-		line-height: 30px !important;
-	}
-	.text {
-		font-size: 16px !important;
-	}
-	.links {
-		margin: 40px auto !important;
-	}
-	.contact-form {
-		.grid {
-			display: flex;
-			flex-direction: column;
-		}
-	}
+    .contact {
+        
+            line-height: 30px !important;
+        
+        .text {
+            font-size: 20px !important;
+            margin-bottom: 40px !important;
+            margin-top: 20px !important;
+        }
+        .links {
+            margin: 40px auto !important;
+        }
+        .contact-form {
+            .grid {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        h2 {
+            font-size: 70px !important;
+        }
+    }
+
 }

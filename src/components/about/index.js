@@ -4,7 +4,7 @@ import './index.scss'
 const About = () => {
     return (
         <div>
-		<div className='text-zone'>
+		<div className='about'>
 			<h2>About Me</h2>
             <div className='container'>
             <p className='text'>I'm Alan, a passionate and enthusiastic junior developer. While working on my AAS degree I focused on .NET Core development in C#. To complete the degree I became a web development intern at Oregon Criminal Defense Lawyers Association where I was mostly writing front-end JavaScript code.

@@ -20,7 +20,7 @@ const Contact = () => {
     
     return (
         <div>
-		<div className='text-zone'>
+		<div className='contact'>
 			<h2>Contact Me</h2>
             <p className='text'>If you would like to contact me,<br/>please send an email using the form below:</p>
             <div className="contact-form">
@@ -46,6 +46,7 @@ const Contact = () => {
                 </form>
             </div>
 		</div>
+        <br/>
 		{/* <Loader type='ball-pulse' /> */}
 	</div>
     )

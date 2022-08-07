@@ -1,7 +1,7 @@
 body {
     overflow-y: scroll;
 }
-.text-zone {
+.about {
 	position: relative;
 	max-height: 90%;
 	max-width: 95%;
@@ -55,19 +55,30 @@ body {
 		font-family: 'Coolvetica';
 	}
 	h2 {
-		font-size: 4vmax;
-		margin: 0 auto;
+		font-size: calc(3rem + 5vw) !important;
+		margin: 10px auto !important;
 		font-weight: 400;
 		color: hsl(0, 100%, 70%);
 	}
 }
 @media screen and (max-width: 600px)
 {
-    .nav-bar {
-        margin-bottom: 10px;
+    .about {
+        .nav-bar {
+            margin-bottom: 10px !important;
+        }
+        .text {
+            margin-top: 50px !important;
+            line-height: 30px !important;
+            font-size: 24px !important;
+            transform: translateY(-30px) !important;
+        }
+        h1, h2 {
+            margin: 20px auto !important;
+        }
+        h2 {
+            font-size: 70px !important;
+        }
     }
-    .text {
-        line-height: 30px !important;
-        font-size: 19px !important;
-    }
+
 }
