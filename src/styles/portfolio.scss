@@ -4,27 +4,8 @@
 	max-width: 95%;
 	margin: 0 auto;
 
-	h1 {
-		display: inline-block;
-		color: white;
-		font-size: 8vmax;
-		margin: 0 auto;
-		font-weight: 500;
-	}
-	.name {
-		color: hsl(0, 90%, 50%);
-	}
-
-	.hi {
-		opacity: 0;
-		animation: fadeIn 4s forwards;
-		animation-delay: 0s;
-	}
-	h1,
 	h2 {
-		font-family: 'Coolvetica';
-	}
-	h2 {
+        font-family: 'Coolvetica';
 		font-size: calc(3rem + 5vw) !important;
 		margin: 0 auto;
         margin-bottom: -30px !important;
@@ -58,13 +39,6 @@
 		color: grey;
 		border-color: grey;
 	}
-    .large {
-        font-size: 4.2vmax;
-    }
-    .small
-    {
-        font-size: 5.5vmin;
-    }
     .item {
         width: 620px;
         min-width: 200px;

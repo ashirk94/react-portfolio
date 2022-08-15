@@ -1,6 +1,12 @@
-import { Routes, Route } from 'react-router-dom'
 import './App.scss'
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/about.scss'
+import './styles/contact.scss'
+import './styles/home.scss'
+import './styles/layout.scss'
+import './styles/navbar.scss'
+import './styles/portfolio.scss'
+
+import { Routes, Route } from 'react-router-dom'
 
 import Layout from './components/layout'
 import Home from './components/home'

@@ -1,5 +1,3 @@
-//import Loader from 'react-loaders'
-import './index.scss'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
@@ -47,7 +45,6 @@ const Contact = () => {
             </div>
 		</div>
         <br/>
-		{/* <Loader type='ball-pulse' /> */}
 	</div>
     )
 }
