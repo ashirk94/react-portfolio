@@ -1,7 +1,4 @@
-import './index.scss'
-//import { Link } from 'react-router-dom'
-import Logo from '../../assets/images/me626.jpg'
-//import Loader from 'react-loaders'
+import Logo from '../assets/images/me626.jpg'
 
 const Home = () => {
 	return (
@@ -23,11 +20,7 @@ const Home = () => {
 						Eugene, Oregon.
 					</h2>
 				</div>
-				{/* <Link to='/contact' id='contact-link'>
-					Contact Me
-				</Link> */}
 			</div>
-			{/* <Loader type="ball-pulse"></Loader>   */}
 		</div>
 	)
 }

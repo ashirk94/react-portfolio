@@ -5,23 +5,6 @@
 	margin: 0 auto;
 	line-height: 60px !important;
 
-    h1 {
-        display: block;
-    }
-
-	.delay1 {
-		opacity: 0;
-		animation: fadeIn 6s forwards;
-		animation-delay: 1.5s;
-	}
-
-	.delay2 {
-		opacity: 0;
-		animation: fadeIn 4.5s backwards;
-		animation-fill-mode: forwards;
-		animation-delay: 3.5s;
-	}
-
 	h2 {
 		color: hsl(0, 100%, 70%);
 		font-size: calc(3rem + 5vw) !important;
@@ -37,6 +20,29 @@
 		animation: fadeIn 3s;
         margin-top: -50px !important;
 	}
+    .btn {
+        text-align: center !important;
+        background: 0 0;
+        color: hsl(200, 0%, 90%);
+        border: 1px solid hsl(200, 0%, 90%);
+        line-height: normal;
+        width: 80px;
+        border-radius: 10px;
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 10px 14px 10px 14px;
+        cursor: pointer;
+        animation: fadeInUp 1.5s 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        margin-top: 30px !important;
+        box-sizing : content-box;
+    }
+    .btn:hover {
+        color: grey;
+        border-color: grey;
+    }
 }
 
 .contact-form {
@@ -89,29 +95,7 @@
 		}
 	}
 }
-.btn {
-    text-align: center;
-	background: 0 0;
-	color: hsl(200, 0%, 90%);
-	border: 1px solid hsl(200, 0%, 90%);
-	width: 80px;
-	border-radius: 10px;
-	font-size: 16px;
-	letter-spacing: 3px;
-	text-decoration: none;
-	padding: 10px 0px;
-	cursor: pointer;
-	animation: fadeInUp 1.5s 1s;
-	animation-fill-mode: forwards;
-	opacity: 0;
-	display: block;
-	margin: 0 auto;
-    margin-top: 30px !important;
-}
-.btn:hover {
-	color: grey;
-	border-color: grey;
-}
+
 @media screen and (max-width: 600px) {
     .contact {
         

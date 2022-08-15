@@ -1,9 +1,6 @@
-//import Loader from 'react-loaders'
-import './index.scss'
-import myGameList from "../../assets/images/mygamelist.jpg"
-import rentTech from "../../assets/images/renttech.jpg"
-import scandinavianFood from "../../assets/images/scandinavianfood.jpg"
-//replace channel this with weather-react
+import myGameList from "../assets/images/mygamelist.jpg"
+import rentTech from "../assets/images/renttech.jpg"
+import scandinavianFood from "../assets/images/scandinavianfood.jpg"
 
 const Portfolio = () => {
     return (
@@ -25,7 +22,6 @@ const Portfolio = () => {
             </div>   
             </div>
 		</div>
-		{/* <Loader type='ball-pulse' /> */}
 	</div>
     )
 }

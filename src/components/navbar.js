@@ -1,9 +1,8 @@
-import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react'
-import Menu from '../menu'
-import MenuMask from '../menuMask'
+import Menu from './menu'
+import MenuMask from './menuMask'
 
 const Navbar = () => {
   //toggle navbar for mobile, show full bar on desktop

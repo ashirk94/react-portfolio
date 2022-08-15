@@ -1,6 +1,3 @@
-//import Loader from 'react-loaders'
-import './index.scss'
-
 const About = () => {
     return (
         <div>
@@ -14,7 +11,6 @@ const About = () => {
             When I'm not coding you can usually find me gaming, going out with friends, or hiking in Oregon's beautiful nature. I'm excited to see what we can accomplish this year!</p>
             </div>
 		</div>
-		{/* <Loader type='ball-pulse' /> */}
 	</div>
     )
 }
