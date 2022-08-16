@@ -2,7 +2,7 @@
 	display: block;
     opacity: 0;
     animation: fadeIn 6s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 
 	img {
         margin-top: 60px !important;
@@ -23,14 +23,14 @@
 	.delay1 {
 		opacity: 0;
 		animation: fadeIn 6s forwards;
-		animation-delay: 1.5s;
+		animation-delay: 1s;
 	}
 
 	.delay2 {
 		opacity: 0;
 		animation: fadeIn 4.5s backwards;
 		animation-fill-mode: forwards;
-		animation-delay: 3.5s;
+		animation-delay: 2s;
 	}
 
 	h1 {
@@ -47,9 +47,8 @@
 
 	.hi {
 		opacity: 0;
-		animation: fadeIn 4s forwards;
-		animation-delay: 1s;
-        
+		animation: fadeIn 4s forwards;      
+        animation-delay: 0.5s; 
 	}
 	h1,
 	h2 {
@@ -68,7 +67,8 @@
             font-size: 50px !important;
             line-height: 30px !important;
             margin: 0 auto !important;
-            margin-top: 80px !important;
+            margin-top: 90px !important;
+            margin-bottom: 28px !important;
         }
         h2 {
             margin: 0 auto !important;
