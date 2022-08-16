@@ -16,7 +16,7 @@ const Home = () => {
 				<div className='delay2'>
                     <br/>
 					<h2>
-						I'm a Full Stack JavaScript and C# Developer <br/>from
+						I'm a JavaScript and C# Developer from
 						Eugene, Oregon.
 					</h2>
 				</div>
