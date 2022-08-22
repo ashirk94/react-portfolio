@@ -7,8 +7,8 @@ body {
   color: white;
   text-align: center;
   font: 300 12px/1.5 'Coolvetica', 'Helvetica Neue';
-  overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
 }
