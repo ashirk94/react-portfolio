@@ -4,6 +4,7 @@ import scandinavianFood from '../assets/images/scandinavianfood.jpg'
 import produceShop from '../assets/images/produceShop.jpg'
 
 const Portfolio = () => {
+	//make images links
 	return (
 		<div>
 			<div className='portfolio'>
@@ -17,10 +18,15 @@ const Portfolio = () => {
 							rel='noreferrer'>
 							Produce Shop
 						</a>
-						<img
-							className='image'
-							src={produceShop}
-							alt='Produce Shop'></img>
+						<a
+							href='https://main.d29j317vl7nv5o.amplifyapp.com/'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								className='image'
+								src={produceShop}
+								alt='Produce Shop'></img>
+						</a>
 					</div>
 					<div className='item'>
 						<a
@@ -30,10 +36,15 @@ const Portfolio = () => {
 							rel='noreferrer'>
 							RentTech
 						</a>
-						<img
-							className='image'
-							src={rentTech}
-							alt='RentTech'></img>
+						<a
+							href='https://tech-rental.azurewebsites.net/'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								className='image'
+								src={rentTech}
+								alt='RentTech'></img>
+						</a>
 					</div>
 					<div className='item'>
 						<a
@@ -43,10 +54,15 @@ const Portfolio = () => {
 							rel='noreferrer'>
 							MyGameList
 						</a>
-						<img
-							className='image'
-							src={myGameList}
-							alt='MyGameList'></img>
+						<a
+							href='http://mygamelist-env.eba-pjfkzxaf.us-west-2.elasticbeanstalk.com/'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								className='image'
+								src={myGameList}
+								alt='MyGameList'></img>
+						</a>
 					</div>
 					<div className='item'>
 						<a
@@ -56,10 +72,15 @@ const Portfolio = () => {
 							rel='noreferrer'>
 							ScandinavianFood
 						</a>
-						<img
-							className='image'
-							src={scandinavianFood}
-							alt='ScandinavianFood'></img>
+						<a
+							href='https://scandinavian-food.azurewebsites.net/'
+							target='_blank'
+							rel='noreferrer'>
+							<img
+								className='image'
+								src={scandinavianFood}
+								alt='ScandinavianFood'></img>
+						</a>
 					</div>
 				</div>
 			</div>

@@ -7,9 +7,10 @@
 
 	h2 {
 		color: hsl(0, 100%, 70%);
-		font-size: calc(3rem + 5vw) !important;
+		font-size: calc(50px + 3vw) !important;
 		font-weight: 500;
         margin-top: 70px !important;
+        margin-bottom: 130px;
 	}
 	.text {
 		display: inline-block;
@@ -117,6 +118,7 @@
         }
         h2 {
             font-size: 60px !important;
+            margin-bottom: 40px !important;
         }
     }
 
