@@ -50,3 +50,14 @@ p {
 .loader-hidden {
     display: none;
 }
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        max-width: 100vw;
+        max-height: 50vh;
+        margin-top: 33%;
+    }
+}

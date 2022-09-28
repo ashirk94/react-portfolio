@@ -13,6 +13,10 @@ import Home from './components/home'
 import About from './components/about'
 import Contact from './components/contact'
 import Portfolio from './components/portfolio'
+import ProduceShop from './components/produceShop'
+import MyGameList from './components/myGameList'
+import RentTech from './components/rentTech'
+import ScandinavianFood from './components/scandinavianFood'
 
 function App() {
 	return (
@@ -23,6 +27,10 @@ function App() {
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path="/portfolio" element={<Portfolio />} />
+                    <Route path='/produce-shop' element={<ProduceShop />} />
+                    <Route path='/my-game-list' element={<MyGameList />} />
+                    <Route path='/rent-tech' element={<RentTech />} />
+                    <Route path='/scandinavian-food' element={<ScandinavianFood />} />
 				</Route>
 			</Routes>
 		</div>
