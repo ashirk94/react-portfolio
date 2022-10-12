@@ -12,3 +12,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
 }
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: hsl(240, 0%, 15%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(240, 0%, 20%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(240, 0%, 25%);
+}
