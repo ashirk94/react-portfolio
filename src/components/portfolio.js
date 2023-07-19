@@ -17,7 +17,7 @@ const Portfolio = () => {
 						</Link>
 						<Link className='links' to='/produce-shop'>
 							<img
-								className='image'
+								className='image wh-border'
 								src={produceShop}
 								alt='Produce Shop'></img>
 						</Link>
@@ -28,7 +28,7 @@ const Portfolio = () => {
 						</Link>
 						<Link className='links' to='/rent-tech'>
 							<img
-								className='image'
+								className='image wh-border'
 								src={rentTech}
 								alt='RentTech'></img>
 						</Link>
@@ -39,7 +39,7 @@ const Portfolio = () => {
 						</Link>
 						<Link className='links' to='/my-game-list'>
 							<img
-								className='image'
+								className='image wh-border'
 								src={myGameList}
 								alt='MyGameList'></img>
 						</Link>
@@ -50,7 +50,7 @@ const Portfolio = () => {
 						</Link>
 						<Link className='links' to='/scandinavian-food'>
 							<img
-								className='image'
+								className='image wh-border'
 								src={scandinavianFood}
 								alt='ScandinavianFood'></img>
 						</Link>
