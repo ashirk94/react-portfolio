@@ -2,6 +2,7 @@ import myGameList from '../assets/images/mygamelist.jpg'
 import rentTech from '../assets/images/renttech.jpg'
 import scandinavianFood from '../assets/images/scandinavianfood.jpg'
 import produceShop from '../assets/images/produceShop.jpg'
+import bloom from '../assets/images/bloom.png'
 import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
@@ -11,6 +12,17 @@ const Portfolio = () => {
 			<div className='portfolio'>
 				<h2>Projects</h2>
 				<div className='link-zone'>
+                    <div className='item'>
+						<a className='links' href='https://bloom-friend-finder.herokuapp.com/'>
+							Bloom
+						</a>
+						<a className='links' href='https://bloom-friend-finder.herokuapp.com/'>
+                        <img
+								className='image wh-border'
+								src={bloom}
+								alt='Bloom'></img>
+						</a>
+                    </div>
 					<div className='item'>
 						<Link className='links' to='/produce-shop'>
 							Produce Shop
