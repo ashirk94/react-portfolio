@@ -1,3 +1,5 @@
+import pdf from '../assets/pdfs/AlanShirkResume.pdf';
+
 const About = () => {
     return (
         <div>
@@ -8,7 +10,7 @@ const About = () => {
             <br/><br/>
             I began coding years ago and spent several months working on a side scroller adventure game in GameMaker Studio. My passion was ignited anew when I took my first C++ programming class in college. Since then I have been eagerly learning various topics, languages, and frameworks in software development. Check out the projects page and my GitHub profile to see what I've been building so far.
             <br/><br/>
-            <a className='links' href='/AlanShirkResume.pdf' target="_blank" rel="noopener noreferrer">Click here to view my resumé!</a></p>
+            <a className='links' href={pdf} target="_blank" rel="noopener noreferrer">Click here to view my resumé!</a></p>
             </div>
 		</div>
 	</div>
