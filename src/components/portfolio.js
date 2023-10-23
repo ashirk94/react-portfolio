@@ -13,10 +13,10 @@ const Portfolio = () => {
 				<h2>Projects</h2>
 				<div className='link-zone'>
                     <div className='item'>
-						<a className='links' href='https://bloom-friend-finder.herokuapp.com/'>
+						<a className='links' href='https://bloom-friend-finder.herokuapp.com/' target='_blank'>
 							Bloom
 						</a>
-						<a className='links' href='https://bloom-friend-finder.herokuapp.com/'>
+						<a className='links' href='https://bloom-friend-finder.herokuapp.com/' target='_blank'>
                         <img
 								className='image wh-border'
 								src={bloom}
