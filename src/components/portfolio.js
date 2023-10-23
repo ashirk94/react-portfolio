@@ -6,17 +6,16 @@ import bloom from '../assets/images/bloom.png'
 import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
-	//upload videos to youtube and embed
 	return (
 		<div>
 			<div className='portfolio'>
 				<h2>Projects</h2>
 				<div className='link-zone'>
                     <div className='item'>
-						<a className='links' href='https://bloom-friend-finder.herokuapp.com/' target='_blank'>
+						<a className='links' href='https://bloom-friend-finder.herokuapp.com/' target='_blank' rel="noreferrer">
 							Bloom
 						</a>
-						<a className='links' href='https://bloom-friend-finder.herokuapp.com/' target='_blank'>
+						<a className='links' href='https://bloom-friend-finder.herokuapp.com/' target='_blank' rel="noreferrer">
                         <img
 								className='image wh-border'
 								src={bloom}
