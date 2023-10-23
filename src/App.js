@@ -17,6 +17,7 @@ import ProduceShop from './components/produceShop'
 import MyGameList from './components/myGameList'
 import RentTech from './components/rentTech'
 import ScandinavianFood from './components/scandinavianFood'
+import Resume from './components/resume'
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
                     <Route path='/my-game-list' element={<MyGameList />} />
                     <Route path='/rent-tech' element={<RentTech />} />
                     <Route path='/scandinavian-food' element={<ScandinavianFood />} />
+                    <Route path='/resume' element={<Resume />} />
 				</Route>
 			</Routes>
 		</div>
