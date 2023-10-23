@@ -9,9 +9,9 @@ export default function ProduceShop() {
 				height='720'
 				src='https://www.youtube.com/embed/t-l0-b0YqN4'
 				title='YouTube video player'
-				frameborder='0'
+				frameBorder='0'
 				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-				allowfullscreen></iframe>
+				allowFullScreen></iframe>
 		</div>
 	)
 }
