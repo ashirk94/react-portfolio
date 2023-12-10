@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: center;
   z-index: 6;
-  position: sticky;
+  position: relative;
 
   .fixed {
     position: fixed;
@@ -60,7 +60,7 @@
         text-align: center;
         justify-content: center;
         bottom: 20px;
-        height: 100%;
+        height: 10px;
       }
 
       &:first-child {
@@ -113,7 +113,10 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    overflow: hidden !important;
     z-index: 3;
+    margin: 0;
+    top: 0;
 }
 
 @media screen and (max-width: 600px)

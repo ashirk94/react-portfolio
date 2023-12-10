@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
+  position: relative;
 }
 ::-webkit-scrollbar {
     width: 15px;
@@ -28,4 +29,34 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: hsl(240, 0%, 25%);
+}
+
+.circle-loader-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+    width: 100vw;
+}
+.circle-loader {
+	border: 16px solid white;
+	border-top: 16px solid black;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.relative {
+    position: relative !important;
+    overflow: hidden !important;
 }

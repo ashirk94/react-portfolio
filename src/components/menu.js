@@ -13,7 +13,7 @@ const Menu = (props) => {
     // }) 
     //return animated.nav to animate
 	return (
-		<nav className="fixed">
+		<nav className="relative">
 			<NavLink exact="true"
 				style={({ isActive }) => ({
 					color: isActive ? 'grey' : 'white'
