@@ -2,16 +2,8 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope, faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-//import { animated, config, useSpring } from 'react-spring'
 
 const Menu = (props) => {
-
-    // const springProps = useSpring({
-    //     from: { opacity: 0, transform: 'translateY(-100%)' },
-    //     to: { opacity: props.showMenu ? 1 : 0 , transform: props.showMenu ? 'translateY(0%)' : 'translateY(-200%)'},
-    //     config: config.slow
-    // }) 
-    //return animated.nav to animate
 	return (
 		<nav className="relative">
 			<NavLink exact="true"
