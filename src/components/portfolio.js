@@ -92,6 +92,7 @@ const Portfolio = () => {
 						</div>
 					</div>
 				</div>
+                <br/>
 			</div>
 		);
 	}
