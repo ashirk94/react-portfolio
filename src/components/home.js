@@ -1,4 +1,4 @@
-import Logo from '../assets/images/me-campus-1-11-23.jpg'
+import Logo from '../assets/images/me-8-8-24.jpg'
 
 const Home = () => {
 	return (
