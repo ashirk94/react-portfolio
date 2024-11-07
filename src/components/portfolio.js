@@ -30,7 +30,7 @@ const Portfolio = () => {
 						<div className="item">
 							<a
 								className="links"
-								href="https://bloom-friend-finder.herokuapp.com/"
+								href="https://github.com/ashirk94/Bloom"
 								target="_blank"
 								rel="noreferrer">
 								Bloom
