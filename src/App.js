@@ -1,10 +1,4 @@
-import './App.scss'
-import './styles/about.scss'
-import './styles/contact.scss'
-import './styles/home.scss'
-import './styles/layout.scss'
-import './styles/navbar.scss'
-import './styles/portfolio.scss'
+import './styles.css'
 
 import { Routes, Route } from 'react-router-dom'
 

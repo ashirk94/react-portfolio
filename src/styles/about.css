@@ -1,0 +1,43 @@
+/* ==================== SHARED PAGE STYLES ==================== */
+.about, .portfolio, .contact {
+    position: relative;
+    max-height: 90%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.about h2, .portfolio h2, .contact h2 {
+    font-family: "Coolvetica";
+    font-size: calc(50px + 3vw) !important;
+    margin: 5px auto 15px auto !important;
+    font-weight: 400;
+    color: hsl(0, 100%, 70%);
+}
+
+.about .text, .contact .text {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    animation: fadeIn 3s;
+}
+
+/* ==================== ABOUT STYLES ==================== */
+.about .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.about .text {
+    font-size: 1.75vmax;
+    margin: 0 auto;
+}
+
+.about h1 {
+    display: inline-block;
+    color: white;
+    font-size: 6vmax;
+    margin: 0 auto;
+    font-weight: 500;
+}

@@ -1,0 +1,115 @@
+/* Mobile Responsive - Shared */
+@media screen and (max-width: 600px) {
+    .fixed {
+        transform: translateY(-10px) !important;
+    }
+    
+    nav {
+        height: max-content !important;
+    }
+    
+    /* Home */
+    .home-text-zone h1 {
+        font-size: 50px !important;
+        line-height: 30px !important;
+        margin: 0 auto !important;
+        margin-top: 90px !important;
+        margin-bottom: 28px !important;
+    }
+    
+    .home-text-zone h2 {
+        margin: 0 auto !important;
+        font-size: 40px !important;
+        line-height: 50px !important;
+        padding-bottom: 50px !important;
+        margin-top: 60px !important;
+    }
+    
+    .home-text-zone .delay1, 
+    .home-text-zone .delay2 {
+        margin: -40px auto !important;
+        font-size: 20px !important;
+    }
+    
+    .home-text-zone .nav-bar {
+        margin-bottom: 30px !important;
+    }
+    
+    .logo img {
+        max-height: 150px;
+    }
+    
+    /* About */
+    .about .nav-bar {
+        margin-bottom: 10px !important;
+    }
+    
+    .about .text {
+        margin-top: 50px !important;
+        line-height: 30px !important;
+        font-size: 24px !important;
+        transform: translateY(-30px) !important;
+    }
+    
+    .about h1, 
+    .about h2 {
+        margin: 20px auto !important;
+    }
+    
+    .about h2 {
+        font-size: 70px !important;
+    }
+    
+    /* Portfolio */
+    .portfolio .item {
+        height: 240px;
+    }
+    
+    .portfolio .link-zone {
+        margin-top: 0px !important;
+    }
+    
+    .portfolio .link-zone .links {
+        font-size: 38px;
+    }
+    
+    .portfolio h2 {
+        margin-bottom: 0px !important;
+        margin-top: 20px !important;
+        font-size: 70px !important;
+    }
+    
+    /* Contact */
+    .contact {
+        line-height: 30px !important;
+    }
+    
+    .contact .text {
+        font-size: 20px !important;
+        margin-bottom: 40px !important;
+        margin-top: 20px !important;
+    }
+    
+    .contact .links {
+        margin: 40px auto !important;
+    }
+    
+    .contact .contact-form .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact h2 {
+        font-size: 60px !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+/* General Mobile Iframe */
+@media (max-width: 768px) {
+    iframe {
+        max-width: 100vw;
+        max-height: 50vh;
+        margin-top: 33%;
+    }
+}

@@ -1,0 +1,10 @@
+/* Consolidated CSS - Import all style modules */
+@import './styles/fonts.css';
+@import './styles/global.css';
+@import './styles/loader.css';
+@import './styles/navigation.css';
+@import './styles/home.css';
+@import './styles/about.css';
+@import './styles/portfolio.css';
+@import './styles/contact.css';
+@import './styles/responsive.css';

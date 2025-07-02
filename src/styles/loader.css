@@ -1,0 +1,44 @@
+/* ==================== LOADER STYLES ==================== */
+.loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    height: 5%;
+    animation: fadeOut 2s backwards;
+    animation-fill-mode: forwards;
+}
+
+.loader-hidden {
+    display: none;
+}
+
+.circle-loader-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85vh;
+    width: 100vw;
+}
+
+.circle-loader {
+	border: 16px solid white;
+	border-top: 16px solid black;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

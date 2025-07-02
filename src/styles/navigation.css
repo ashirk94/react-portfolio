@@ -1,0 +1,126 @@
+/* ==================== NAVIGATION STYLES ==================== */
+.nav-bar {
+  background: black;
+  width: 100%;
+  justify-content: center;
+  z-index: 6;
+  position: relative;
+}
+
+.nav-bar .fixed {
+    position: fixed;
+}
+
+.nav-bar .menu {
+    margin-top: 0;
+    top: 8%;
+}
+
+.nav-bar nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    gap: 2%;
+    justify-content: center;
+    z-index: 5;
+    background-color: black;
+}
+
+.nav-bar nav a, 
+.nav-bar nav .burger {
+    padding: 0 1%;
+    width: 10rem;
+    font-size: 30px;
+    color: white;
+    line-height: 7rem;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bar nav a:hover,
+.nav-bar nav a:focus,
+.nav-bar nav .burger:hover,
+.nav-bar nav .burger:focus {
+    color: grey;
+}
+
+.nav-bar nav a:hover svg,
+.nav-bar nav a:focus svg,
+.nav-bar nav .burger:hover svg,
+.nav-bar nav .burger:focus svg {
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav-bar nav a:hover:after,
+.nav-bar nav a:focus:after,
+.nav-bar nav .burger:hover:after,
+.nav-bar nav .burger:focus:after {
+    opacity: 1;
+    color: grey;
+}
+
+.nav-bar nav a:after,
+.nav-bar nav .burger:after {
+    content: '';
+    margin: 0 3%;
+    font-size: 10px;
+    letter-spacing: 5px;
+    line-height: 5rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    bottom: 20px;
+    height: 10px;
+}
+
+.nav-bar nav a:first-child:after {
+    content: 'HOME';
+}
+
+.nav-bar nav a.about-link:after {
+    content: 'ABOUT';
+}
+
+.nav-bar nav a.contact-link:after {
+    content: 'CONTACT';
+}
+
+.nav-bar nav a.portfolio-link:after {
+    content: 'PROJECTS';
+}
+
+.nav-bar nav a.linkedin-link:after {
+    content: 'LINKEDIN';
+}
+
+.nav-bar nav a.github-link:after {
+    content: 'GITHUB';
+    margin-bottom: 20px;
+}
+
+.nav-bar nav .burger:after {
+    content: '';
+}
+
+.nav-bar nav a.active svg {
+    color: grey;
+}
+
+.menu-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 200%;
+    overflow: hidden !important;
+    z-index: 3;
+    margin: 0;
+    top: 0;
+}

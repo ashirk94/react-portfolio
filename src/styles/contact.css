@@ -1,0 +1,89 @@
+/* ==================== CONTACT STYLES ==================== */
+.contact {
+    line-height: 60px !important;
+    padding-top: 90px;
+}
+
+.contact .text {
+    font-size: 1.8vmax;
+    margin: 20px auto;
+    margin-top: 50px !important;
+    margin-bottom: 40px !important;
+}
+
+.contact .btn {
+    text-align: center !important;
+    background: 0 0;
+    color: hsl(200, 0%, 90%);
+    border: 1px solid hsl(200, 0%, 90%);
+    line-height: normal;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 10px 14px 10px 14px;
+    cursor: pointer;
+    animation: fadeIn 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-top: 30px !important;
+    box-sizing: content-box;
+}
+
+.contact .btn:hover {
+    color: grey;
+    border-color: grey;
+}
+
+.contact-form .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.contact-form .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form ul {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 0px;
+    display: block;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+.contact-form ul input[type='text'],
+.contact-form ul input[type='email'],
+.contact-form ul textarea {
+    border: 0;
+    background: hsl(200, 0%, 30%);
+    font-size: 16px;
+    color: hsl(200, 0%, 90%);
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-form ul input[type='text'],
+.contact-form ul input[type='email'] {
+    height: 50px;
+}
+
+.contact-form ul textarea {
+    height: 100px;
+    margin-bottom: 0px;
+}
