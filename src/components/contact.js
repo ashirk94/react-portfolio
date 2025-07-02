@@ -1,12 +1,17 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import Recaptcha from './Recaptcha'
 
 const Contact = () => {
     const form = useRef()
+    const [captcha, setCaptcha] = useState(null)
 
     const sendEmail = (e) => {
         e.preventDefault()
-    
+        if (!captcha) {
+            alert('Please complete the captcha!')
+            return
+        }
         emailjs.sendForm('service_hz8jlj6', 'template_lb09zmq', form.current, 'viLkzGTITUcl5llhl')
           .then(() => {
               alert('Email sent successfully')
@@ -40,6 +45,7 @@ const Contact = () => {
                             <textarea className="row" name="message" placeholder=" Message" required />
                         </li>
                     </ul>
+                    <Recaptcha onChange={setCaptcha} />
                     <input type="submit" className="btn" value="SEND"  />
                 </form>
             </div>
