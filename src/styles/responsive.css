@@ -13,7 +13,7 @@
         font-size: 50px !important;
         line-height: 30px !important;
         margin: 0 auto !important;
-        margin-top: 90px !important;
+        margin-top: 60px !important;
         margin-bottom: 28px !important;
     }
     
@@ -22,12 +22,12 @@
         font-size: 40px !important;
         line-height: 50px !important;
         padding-bottom: 50px !important;
-        margin-top: 60px !important;
+        margin-top: 45px !important;
     }
     
     .home-text-zone .delay1, 
     .home-text-zone .delay2 {
-        margin: -40px auto !important;
+        margin: -50px auto !important;
         font-size: 20px !important;
     }
     
@@ -36,7 +36,9 @@
     }
     
     .logo img {
-        max-height: 150px;
+        max-height: 200px;
+        width: auto;
+        margin-top: 30px !important;
     }
     
     /* About */
@@ -45,7 +47,7 @@
     }
     
     .about .text {
-        margin-top: 50px !important;
+        margin-top: 10px !important;
         line-height: 30px !important;
         font-size: 24px !important;
         transform: translateY(-30px) !important;
@@ -58,6 +60,7 @@
     
     .about h2 {
         font-size: 70px !important;
+        margin-top: -10px !important;
     }
     
     /* Portfolio */
@@ -75,7 +78,7 @@
     
     .portfolio h2 {
         margin-bottom: 0px !important;
-        margin-top: 20px !important;
+        margin-top: -20px !important;
         font-size: 70px !important;
     }
     
@@ -102,6 +105,7 @@
     .contact h2 {
         font-size: 60px !important;
         margin-bottom: 40px !important;
+        margin-top: 40px !important;
     }
 }
 
@@ -113,3 +117,65 @@
         margin-top: 33%;
     }
 }
+
+@media (max-width: 768px) {
+    .captcha-submit-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .captcha-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .submit-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .captcha-wrapper .g-recaptcha {
+        transform: scale(0.95);
+        transform-origin: center;
+    }
+}
+
+/* Hide extra white box below reCAPTCHA */
+.captcha-wrapper {
+    position: relative;
+    height: auto;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+/* Shrink reCAPTCHA and prevent overflow */
+.captcha-wrapper .g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: center;
+    height: auto !important;
+    width: auto !important;
+    overflow: visible !important;
+}
+
+/* Remove box/border from iframe container */
+.captcha-wrapper iframe {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Remove default spacing injected by reCAPTCHA */
+.captcha-wrapper > div {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+}
+

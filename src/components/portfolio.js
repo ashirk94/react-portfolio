@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Portfolio = () => {
-	const [isLoading, setIsLoading] = useState(true);
+	const [hasLoaded, setHasLoaded] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
-			setIsLoading(false);
-		}, 1000);
+			setHasLoaded(true);
+		}, 250);
 	}, []);
 
-	if (isLoading) {
+	if (!hasLoaded) {
 		return (
 			<div className="circle-loader-container">
 				<div className="circle-loader"></div>

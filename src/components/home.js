@@ -16,8 +16,8 @@ const Home = () => {
 				<div className='delay2'>
                     <br/>
 					<h2>
-						I'm a Software Engineer in
-						Beaverton, Oregon.
+						I'm a Software Engineer based in
+						Eugene, Oregon.
 					</h2>
 				</div>
 			</div>
