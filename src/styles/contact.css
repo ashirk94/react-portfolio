@@ -236,6 +236,7 @@
     .contact-form ul input[type='email'] {
         height: 38px;
         font-size: 14px;
+        box-sizing: border-box;
     }
     
     .contact-form ul textarea {
@@ -243,6 +244,8 @@
         min-height: 55px;
         font-size: 14px;
         margin-bottom: 5px;
+        padding: 12px 0px;
+        box-sizing: border-box;
     }
     
     .contact .btn {
