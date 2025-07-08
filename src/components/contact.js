@@ -73,9 +73,7 @@ const Contact = () => {
 									required
 								/>
 							</li>
-						</ul>
-						<ul className="flex">
-							<li>
+							<li className="full-row">
 								<input
 									className="row"
 									type="text"
@@ -84,7 +82,7 @@ const Contact = () => {
 									required
 								/>
 							</li>
-							<li>
+							<li className="full-row">
 								<textarea
 									className="row"
 									name="message"
