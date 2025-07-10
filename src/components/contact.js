@@ -16,11 +16,11 @@ const Contact = () => {
 		const hasVisitedContact = sessionStorage.getItem('hasVisitedContact');
 		
 		if (!hasVisitedContact) {
-			// First visit - show loader for 0.25 seconds
+			// First visit - show loader for 1.5 seconds to cover reCAPTCHA loading
 			setTimeout(() => {
 				setHasLoaded(true);
 				sessionStorage.setItem('hasVisitedContact', 'true');
-			}, 250);
+			}, 1500);
 		}
 	}, []);
 
