@@ -92,7 +92,7 @@ const Portfolio = () => {
 						</div>
 					</div>
 				</div>
-                <br/>
+				<br />
 			</div>
 		);
 	}

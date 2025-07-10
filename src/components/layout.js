@@ -1,15 +1,15 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from './navbar'
+import { Outlet } from "react-router-dom";
+import Navbar from "./navbar";
 
 const Layout = () => {
 	return (
-		<div className='App'>
+		<div className="App">
 			<Navbar />
-			<div className='page'>
+			<div className="page">
 				<Outlet />
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Layout
+export default Layout;

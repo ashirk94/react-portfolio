@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Recaptcha from "./Recaptcha";
 
@@ -7,6 +7,22 @@ const Contact = () => {
 	const [captcha, setCaptcha] = useState(null);
 	const [message, setMessage] = useState("");
 	const [messageType, setMessageType] = useState("");
+	const [hasLoaded, setHasLoaded] = useState(() => {
+		// Initialize based on sessionStorage to prevent flash
+		return sessionStorage.getItem('hasVisitedContact') !== null;
+	});
+
+	useEffect(() => {
+		const hasVisitedContact = sessionStorage.getItem('hasVisitedContact');
+		
+		if (!hasVisitedContact) {
+			// First visit - show loader for 0.25 seconds
+			setTimeout(() => {
+				setHasLoaded(true);
+				sessionStorage.setItem('hasVisitedContact', 'true');
+			}, 250);
+		}
+	}, []);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -41,13 +57,21 @@ const Contact = () => {
 			);
 	};
 
+	if (!hasLoaded) {
+		return (
+			<div className="circle-loader-container">
+				<div className="circle-loader"></div>
+			</div>
+		);
+	}
+
 	return (
 		<div>
 			<div className="contact">
 				<h2>Contact Me</h2>
 				<p className="text">
-					If you would like to contact me,
-					please send an email using the form below:
+					If you would like to contact me, please send an email using
+					the form below:
 				</p>
 				{message && (
 					<div className={`message ${messageType}`}>{message}</div>
