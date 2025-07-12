@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Recaptcha from "./Recaptcha";
 
@@ -7,22 +7,7 @@ const Contact = () => {
 	const [captcha, setCaptcha] = useState(null);
 	const [message, setMessage] = useState("");
 	const [messageType, setMessageType] = useState("");
-	const [hasLoaded, setHasLoaded] = useState(() => {
-		// Initialize based on sessionStorage to prevent flash
-		return sessionStorage.getItem('hasVisitedContact') !== null;
-	});
-
-	useEffect(() => {
-		const hasVisitedContact = sessionStorage.getItem('hasVisitedContact');
-		
-		if (!hasVisitedContact) {
-			// First visit - show loader for 1.5 seconds to cover reCAPTCHA loading
-			setTimeout(() => {
-				setHasLoaded(true);
-				sessionStorage.setItem('hasVisitedContact', 'true');
-			}, 1500);
-		}
-	}, []);
+	const [captchaVisible, setCaptchaVisible] = useState(false);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -56,15 +41,6 @@ const Contact = () => {
 				}
 			);
 	};
-
-	if (!hasLoaded) {
-		return (
-			<div className="circle-loader-container">
-				<div className="circle-loader"></div>
-			</div>
-		);
-	}
-
 	return (
 		<div>
 			<div className="contact">
@@ -116,8 +92,14 @@ const Contact = () => {
 							</li>
 						</ul>
 						<div className="captcha-submit-container">
-							<div className="captcha-wrapper">
-								<Recaptcha onChange={setCaptcha} />
+							<div
+								className={`captcha-wrapper ${
+									captchaVisible ? "loaded" : ""
+								}`}>
+								<Recaptcha
+									onChange={setCaptcha}
+									onLoaded={() => setCaptchaVisible(true)}
+								/>
 							</div>
 							<div className="submit-wrapper">
 								<input

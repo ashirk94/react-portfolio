@@ -177,6 +177,12 @@
     padding: 0;
     position: relative;
     overflow: visible;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    min-height: 78px;
+}
+.captcha-wrapper.loaded {
+  opacity: 1 !important;
 }
 
 /* Submit button wrapper - overlap captcha more */
@@ -206,6 +212,19 @@
     position: static !important;
     transform: none !important;
     margin: 0 !important;
+}
+
+.captcha-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  min-height: 80px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .captcha-submit-container .btn {
