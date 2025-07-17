@@ -19,7 +19,7 @@ const About = () => {
 						<br />
 						<br />
 						<br />
-						{/* <a className='links' href='/pdfs/AlanShirkResume.pdf' target='_blank'>Click here to view my resumé!</a> */}
+						<a className='links' href='/pdfs/AlanShirkResume.pdf' target='_blank'>Click here to view my resumé!</a>
 					</p>
 				</div>
 			</div>
