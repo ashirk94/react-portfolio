@@ -12,7 +12,7 @@ const Portfolio = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setHasLoaded(true);
-		}, 250);
+		}, 500);
 	}, []);
 
 	if (!hasLoaded) {
