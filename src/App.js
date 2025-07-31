@@ -3,14 +3,14 @@ import "./styles.css";
 import { Routes, Route } from "react-router-dom";
 
 import Layout from "./components/layout";
-import Home from "./components/home";
-import About from "./components/about";
-import Contact from "./components/contact";
-import Portfolio from "./components/portfolio";
-import ProduceShop from "./components/produceShop";
-import MyGameList from "./components/myGameList";
-import RentTech from "./components/rentTech";
-import ScandinavianFood from "./components/scandinavianFood";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import Portfolio from "./pages/portfolio";
+import ProduceShop from "./pages/produceShop";
+import MyGameList from "./pages/myGameList";
+import RentTech from "./pages/rentTech";
+import ScandinavianFood from "./pages/scandinavianFood";
 
 function App() {
 	return (

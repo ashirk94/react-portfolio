@@ -1,57 +1,91 @@
 /* ==================== PORTFOLIO STYLES ==================== */
 .portfolio .wh-border {
-    border: 2px solid white;
+	border: 2px solid white;
 }
 
 .portfolio .link-zone {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    justify-content: center;
-    width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	justify-content: center;
+	width: 80%;
 }
 
 .portfolio .links {
-    text-align: center;
-    color: white;
-    font-size: 3vmax;
-    margin: 20px auto !important;
-    margin-top: 40px;
-    margin-bottom: 15px !important;
-    font-weight: 500;
-    animation: fadeInUp 2s 0s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    line-height: 50px !important;
-    display: block;
+	text-align: center;
+	color: white;
+	font-size: 3vmax;
+	margin: 20px auto !important;
+	margin-top: 40px;
+	margin-bottom: 15px !important;
+	font-weight: 500;
+	animation: fadeInUp 2s 0s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	line-height: 50px !important;
+	display: block;
 }
 
 .portfolio .links:hover,
 .portfolio .links:focus {
-    color: grey;
-    border-color: grey;
+	color: grey;
+	border-color: grey;
 }
 
 .portfolio .item {
-    width: 620px;
-    min-width: 200px;
-    min-height: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-flow: column wrap;
-    margin-bottom: 10px;
+	width: 620px;
+	min-width: 200px;
+	min-height: 100px;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-flow: column wrap;
+	margin-bottom: 10px;
 }
 
 .portfolio .image {
-    margin: 0 auto;
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    min-width: 200px;
-    height: auto;
-    max-height: 280px;
-    min-height: 100px;
-    border-radius: 20px;
-    margin: 10px auto !important;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	min-width: 200px;
+	height: auto;
+	max-height: 280px;
+	min-height: 100px;
+	border-radius: 20px;
+	margin: 10px auto !important;
+}
+
+.image-placeholder {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	min-width: 200px;
+	height: 280px;
+	border-radius: 20px;
+	margin: 10px auto !important;
+	background-color: #eee;
+}
+
+.hidden {
+	display: none;
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .portfolio {
+        padding-bottom: 10px;
+    }
 }
