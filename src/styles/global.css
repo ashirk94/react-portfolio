@@ -22,7 +22,17 @@ body {
 	min-height: 100vh;
 	height: auto;
 	background-color: hsl(200, 0%, 10%);
-	background: cover;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(200, 0%, 10%);
+  z-index: -1;
 }
 
 ::-webkit-scrollbar {
