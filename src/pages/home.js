@@ -15,7 +15,7 @@ const Home = () => {
 				</span>
 				<div className="delay2">
 					<br />
-					<h2>I'm a Software Engineer based in Eugene, Oregon.</h2>
+					<h2>I'm an AI Trainer based in Eugene, Oregon.</h2>
 				</div>
 			</div>
 		</div>

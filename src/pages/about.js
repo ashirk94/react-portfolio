@@ -7,18 +7,12 @@ const About = () => {
 				<br />
 				<div className="container">
 					<p className="text">
-						I'm a Software Engineer with over 5 years of programming
-						experience and a strong foundation in both front-end and
-						back-end development. In June 2025, I earned a Bachelor
-						of Science in Computer Science from Portland State
-						University, where I maintained a 3.74 major GPA (3.54
-						overall) and completed a team-based capstone project
-						with PSU's BikePed Portal, developing data upload tools
-						and automation pipelines to support transportation
-						research.
-						<br />
-						<br />
-						<br />
+						I complete AI training tasks for Handshake AI and DataAnnotation.
+                        <br /><br />
+                        In 2025 I was a Software Engineer developing React projects for Foster Parent College at Northwest Media Inc. in Eugene, Oregon.
+                        <br /><br />
+                        I graduated with a Bachelor's degree in Computer Science from Portland State University and an Associate's degree in Computer Programming from Lane Community College.
+						<br /><br />
 						<a className='links' href='/pdfs/AlanShirkResume.pdf' target='_blank'>Click here to view my resumé!</a>
 					</p>
 				</div>
